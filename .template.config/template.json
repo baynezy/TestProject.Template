@@ -1,0 +1,46 @@
+{
+	"$schema": "http://json.schemastore.org/template",
+	"author": "Simon Baynes",
+	"classifications": [
+		"Testing",
+		"Unit Testing",
+		"xUnit"
+	],
+	"identity": "baynezy.xUnitTemplate",
+	"name": "xUnit Test Project",
+	"shortName": "xunit-test-baynezy",
+	"sourceName": "TestProject.Template",
+	"tags": {
+		"language": "C#",
+		"type": "project"
+	},
+	"preferNameDirectory": true,
+	"symbols": {
+		"RestorePackagesWithLockFile": {
+			"type": "parameter",
+			"datatype": "bool",
+			"description": "Restore packages with lock file",
+			"defaultValue": "true",
+			"replaces": "{RestorePackagesWithLockFile}"
+		}
+	},
+	"sources": [
+		{
+			"modifiers": [
+				{
+					"exclude": [
+						"**/bin/**",
+						"**/obj/**",
+						"**/.idea/**",
+						".gitignore",
+						".gitmessage",
+						"packages.lock.json",
+                        "README.md",
+                        "LICENSE.txt",
+                        ".editorconfig"
+					]
+				}
+			]
+		}
+	]
+}

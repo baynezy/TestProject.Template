@@ -29,7 +29,7 @@
 			"modifiers": [
 				{
 					"exclude": [
-						".git",
+						"**/.git/**",
 						"**/bin/**",
 						"**/obj/**",
 						"**/.idea/**",
